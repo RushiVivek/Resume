@@ -1,0 +1,53 @@
+%-------------------------------------------------------------------------------
+%\tSECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+
+%-------------------------------------------------------------------------------
+%\tCONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+
+%---------------------------------------------------------
+  \cventry
+    {Content-Addressed Encrypted Storage}
+    {Atlas}
+    {\href{https://codeberg.org/RushiVivek/Atlas}{source}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Built a content-addressed storage system using \textbf{FastCDC}, \textbf{BLAKE3}, \textbf{ChaCha20-Poly1305}, and \textbf{deduplication} for encrypted file storage.}
+        \item {Engineered \textbf{concurrent FUSE I/O}, \textbf{replication/reconciliation}, snapshots, and crash-safe garbage collection with SQLite-backed metadata.}
+        \item {Optimized large uploads by separating chunk transfers from metadata operations; validated recovery and integrity through extensive testing and multi-GB end-to-end verification.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Real-Time Task Manager}
+    {Koto}
+    {\href{https://github.com/RushiVivek/Koto}{source}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Built a persistent hierarchical task system with \textbf{SQLite WAL, REST APIs, WebSockets, token authentication, and real-time multi-client synchronization}.}
+        \item {Implemented recursive tree operations, recurring state transitions, and a TUI/web client; deployed as a hardened systemd service.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+  \cventry
+    {Cross-Platform Network Daemon}
+    {Diodos}
+    {\href{https://github.com/RushiVivek/Diodos}{source}}
+    {}
+    {
+      \begin{cvitems}
+        \item {Built a cross-platform daemon that \textbf{detects captive portals and automatically authenticates}, with persistent session handling.}
+        \item {Implemented OS-specific daemon lifecycle, networking, and \textbf{cross-platform smoke/CI testing} across Linux, macOS, and Windows.}
+      \end{cvitems}
+    }
+
+%---------------------------------------------------------
+\end{cventries}
